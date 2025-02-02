@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoGrabberLibrary", "VideoGrabberLibrary\VideoGrabberLibrary.csproj", "{58D3C7BF-0FAD-4B6B-ADFB-D2232FFC94C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoGrabberLibrary", "VideoGrabberLibrary\VideoGrabberLibrary.csproj", "{58D3C7BF-0FAD-4B6B-ADFB-D2232FFC94C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{991B38D1-1383-45B9-8D05-BF23878462C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testing", "Testing\Testing.csproj", "{991B38D1-1383-45B9-8D05-BF23878462C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoGrabberMVVMGUI", "VideoGrabberMVVMGUI\VideoGrabberMVVMGUI.csproj", "{725FE892-8A87-4664-B9AD-24C3C8A7149A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{991B38D1-1383-45B9-8D05-BF23878462C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{991B38D1-1383-45B9-8D05-BF23878462C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{991B38D1-1383-45B9-8D05-BF23878462C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{725FE892-8A87-4664-B9AD-24C3C8A7149A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{725FE892-8A87-4664-B9AD-24C3C8A7149A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{725FE892-8A87-4664-B9AD-24C3C8A7149A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{725FE892-8A87-4664-B9AD-24C3C8A7149A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

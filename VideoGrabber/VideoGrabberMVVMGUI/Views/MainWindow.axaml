@@ -1,0 +1,81 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:VideoGrabberMVVMGUI.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:materialIcons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+        x:Class="VideoGrabberMVVMGUI.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/main_logo.ico"
+        Title="Youtube Video Grabber">
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+	
+	<DockPanel Margin="10">
+		<TabControl>
+			<TabItem Header="Main">
+				<StackPanel HorizontalAlignment="Center" Margin="10" Width="600" Orientation="Vertical" Spacing="20">
+					<TextBlock TextAlignment="Center" FontSize="30" FontWeight="SemiBold" Text="Youtube Video Grabber" />
+					<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+						<TextBox Padding="10" Watermark="Enter youtube video url" TextWrapping="Wrap" Height="40"  MinWidth="400" />
+						<!--it is separate button just close to text box-->
+						<Button Cursor="Hand" Padding="10" Margin="5 0">Start</Button>
+					</StackPanel>
+					<Separator/>
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="*"></ColumnDefinition>
+							<ColumnDefinition Width="2*"></ColumnDefinition>
+						</Grid.ColumnDefinitions>
+						<StackPanel Grid.Column="0">
+							<materialIcons:MaterialIconExt Kind="Youtube" Size="200" />
+						</StackPanel>
+						<StackPanel Grid.Column="1" Margin="10 20">
+							<StackPanel Orientation="Vertical" Spacing="10" Margin="0 10">
+								<WrapPanel Orientation="Horizontal">
+									<StackPanel Orientation="Horizontal" Spacing="5" Margin="5 0" VerticalAlignment="Center">
+										<materialIcons:MaterialIconExt Kind="AccountCircle" Size="25" />
+										<TextBlock Text="Channel:" VerticalAlignment="Center" />
+										<TextBlock Text="Dummy text" VerticalAlignment="Center" />
+									</StackPanel>
+								</WrapPanel>
+								<WrapPanel Orientation="Horizontal">
+									<StackPanel Orientation="Horizontal" Spacing="5" Margin="5 0" VerticalAlignment="Center">										
+										<materialIcons:MaterialIconExt Kind="Calendar" Size="25" />
+										<TextBlock Text="Published:" VerticalAlignment="Center" />
+										<TextBlock Text="Dummy text" VerticalAlignment="Center" />
+									</StackPanel>
+								</WrapPanel>
+								<WrapPanel Orientation="Horizontal">
+									<StackPanel Orientation="Horizontal" Spacing="5" Margin="5 0" VerticalAlignment="Center">
+										<materialIcons:MaterialIconExt Kind="Clock" Size="25" />
+										<TextBlock Text="Duration:" VerticalAlignment="Center" />
+										<TextBlock Text="Dummy text" VerticalAlignment="Center" />
+									</StackPanel>
+								</WrapPanel>
+								<WrapPanel Orientation="Horizontal">
+									<StackPanel Orientation="Horizontal" Spacing="5" Margin="5 0" VerticalAlignment="Center">
+										<materialIcons:MaterialIconExt Kind="Eye" Size="25" />
+										<TextBlock Text="Views:" VerticalAlignment="Center" />
+										<TextBlock Text="Dummy text" VerticalAlignment="Center" />
+									</StackPanel>
+								</WrapPanel>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal" Spacing="10">
+								<!--Create dialog box where to save file-->
+								<Button Cursor="Hand">Download MP3</Button>
+								<Button Cursor="Hand">Download MP4</Button>
+							</StackPanel>
+						</StackPanel>
+					</Grid>
+				</StackPanel>
+			</TabItem>
+			<TabItem Header="Downloaded">
+<TextBlock Text="suduva"/>
+			</TabItem>
+		</TabControl>
+	</DockPanel>
+
+</Window>
